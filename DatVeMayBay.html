@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dat ve may nay</title>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+	<form>
+		<table>
+			<tr>
+				<td>Ho va ten</td>
+				<td><input type="text" id="txtHoTen" name=""></td>
+			</tr>
+			<tr>
+				<td>Chung minh thu</td>
+				<td><input type="text" id="txtCmt" name=""></td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td><input type="email" id="txtEmail" name=""></td>
+			</tr>
+			<tr>
+				<td>Gioi tinh</td>
+				<td>
+					Nam<input type="radio" id="rdGioiTinh" name="rdGioiTinh">
+					Nu<input type="radio" id="rdGioiTinh" name="rdGioiTinh">
+				</td>
+			</tr>
+			<tr>
+				<td>So dien thoai</td>
+				<td><input type="number" id="numPhone" name=""></td>
+			</tr>
+			<tr>
+				<td>Chon chuyen bay</td>
+				<td>
+					<select id="sltChuyemBay">
+						<option value="0">-----Chon------</option>
+						<option value="VN1122(Hà Nội-Sài Gòn">VN1122(Hà Nội-Sài Gòn</option>
+						<option value="VN1130(Quy nhơn-Sài Gòn)">VN1130(Quy nhơn-Sài Gòn)</option>
+						<option value="VN1131(Huế-Quảng Bình)">VN1131(Huế-Quảng Bình)</option>
+					</select> 
+				</td>
+			</tr>
+			<tr>
+				<td>Ngay sinh</td>
+				<td><input type="date" id="txtDate" name=""></td>
+			</tr>
+			<tr>
+				<td>Hanh ly</td>
+				<td><input type="number" id="numHanhLy" name=""></td>
+			</tr>
+			<tr>
+				<td>Hinh thuc thanh toan</td>
+				<td>
+					<select id="sltThanhToan">
+						<option value="0">------Chon-------</option>
+						<option value="Chuyen khoan">Chuyen khoan</option>
+						<option value="Tien mat">Tien mat</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><input type="reset" id="btnReset" name=""></td>
+				<td><input type="button" id="btnDatVe" value="Dat ve" name=""></td>
+			</tr>
+		</table>
+	</form>
+	<table id="tblXacNhanDatVe" border="1" bgcolor="blue"></table>
+
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("btnDatVe").click(function(){
+
+			var hoTen = $("#txtHoTen").val();
+			var cmt = $("#txtCmt").val();
+			var email = $("#txtEmail").val();
+			var sdt = $("#numPhone")/.val();
+			var chuyenBay = $("#sltChuyemBay").val();
+			var ngaySinh = $("#txtDate").val();
+			var yearCustomer =ngaySinh.getFullYear();
+			var dt = new Date();
+			var currenYear = dt.getFullYear();
+			var hanhLy = $("#numHanhLy").val();
+			var hinhThucThanhToan = $("#sltThanhToan").val();
+			
+
+
+		})
+	})
+
+
+
+
+
+
+
+
+</script>
+</html>
